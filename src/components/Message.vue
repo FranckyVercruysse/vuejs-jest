@@ -1,12 +1,15 @@
 <template>
-  <li class="message">{{message}}</li>
+  <li style="margin-top: 10px" class="message">{{message}}</li>
 </template>
 
 <script>
 export default {
-  props: ['message'],
-  created() {
-      console.log('CREATED in Message.vue component')
-  }
+  props: ['message']
 }
 </script>
+
+<style scoped>
+.message {
+  color: red;
+}
+</style>
