@@ -6,6 +6,7 @@
 
 <script>
 import MessageList from '@/components/MessageList'
+
 export default {
   name: 'App',
   data: () => ({messages: ['Hey John', 'Howdy Paco']}),
