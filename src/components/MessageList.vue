@@ -1,15 +1,16 @@
 <template>
   <ul>
-      <li v-for="message in messages" :key="message">{{message}}</li>
+      <message :message="message" v-for="message in messages" :key="message" />
   </ul>
 </template>
 
 <script>
+import Message from './Message'
 export default {
   name: 'list',
   props: ['messages'],
-  created: function () {
-    console.log('created lifecycle hook of MessageList.vue component !')
+  components: {
+    Message
   }
 }
 </script>
